@@ -149,6 +149,7 @@ public class GameOnController {
                                                         .getThirdChoiceByNumber(
                                                                         Context.getInstance().currentQuestionNumber()));
                                 }
+                                Context.getInstance().reset();
                         } else {
                                 int random = new Random().nextInt(4);
                                 if (random == 0) {

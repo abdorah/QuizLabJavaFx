@@ -28,4 +28,10 @@ public class Context {
     public void setcurrentQuestionNumber(int currentQuestionNumber){
         questionNumber = currentQuestionNumber;
     }
+
+    public void reset() {
+        questionNumber = 0;
+        service = new Service();
+        service.chooseAccount(player.getName());
+    }
 }
