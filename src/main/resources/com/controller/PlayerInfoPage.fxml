@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="368.0" prefWidth="590.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.controller.PlayerInfosController">
+   <children>
+      <Label fx:id="highScoreDisplay" alignment="CENTER" layoutX="149.0" layoutY="218.0" style="&#10;" text="High score:" textAlignment="CENTER" textFill="WHITE" wrapText="false">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ToolBar layoutY="6.0" prefHeight="40.0" prefWidth="640.0" style="-fx-background-color: black;">
+         <items>
+            <Button fx:id="exitButton" mnemonicParsing="false" onAction="#exitButton" style="-fx-background-color: black; -fx-alignment: center;" text="exit" textFill="WHITE" />
+         </items>
+      </ToolBar>
+      <Label fx:id="playerNameDisplay" alignment="CENTER" layoutX="89.0" layoutY="121.0" prefHeight="21.0" prefWidth="462.0" style="&#10;" text="Player name:" textFill="WHITE" wrapText="false">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="playerNewName" layoutX="149.0" layoutY="160.0" />
+      <Button fx:id="newPlayerNameButton" layoutX="-143.0" layoutY="160.0" mnemonicParsing="false" onAction="#newPlayerNameButton" style="-fx-translate-x: 500; -fx-background-color: black;" text="submit" textFill="WHITE">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Button>
+   </children>
+</AnchorPane>
