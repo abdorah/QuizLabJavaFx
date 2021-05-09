@@ -64,7 +64,7 @@ public class GamePausedController {
         assert infosButton != null : "fx:id=\"infosButton\" was not injected: check your FXML file 'GamePausedPage.fxml'.";
         assert continueButton != null : "fx:id=\"continueButton\" was not injected: check your FXML file 'GamePausedPage.fxml'.";
         assert helpButton != null : "fx:id=\"helpButton\" was not injected: check your FXML file 'GamePausedPage.fxml'.";
-        if (Context.getInstance().currentQuestionNumber() == Context.getInstance().currentGameService().takeQuiz().size() - 1) {
+        if (Context.getInstance().currentQuestionNumber() == Context.getInstance().currentGameService().takeQuiz().size()) {
             continueButton.setText("start");
         }
     }
